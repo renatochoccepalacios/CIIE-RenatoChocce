@@ -1,0 +1,232 @@
+@use 'setup'
+
+@keyframes progress-step
+    from
+        opacity: 0
+
+    to
+        opacity: 1
+
+main#register
+    max-width: 500px
+    margin: 0 auto
+    margin-top: 60px
+    overflow: hidden
+
+    +font("Urbanist", 16px)
+
+    .logo
+        +flex
+
+    form
+        .progress-bar
+            position: relative
+            display: flex
+            justify-content: space-between
+            counter-reset: step
+            width: 350px
+            margin: 30px auto 10px auto
+
+            &::before
+                content: ""
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                height: 1px
+                width: 100%
+                background: $placeholder
+                z-index: -10
+
+            .progress
+                content: ""
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                height: 1px
+                width: 0%
+                background: $lightblue
+                z-index: -10
+                transition: 0.35s all
+
+            .progress-step
+                width: 30px
+                height: 30px
+                border-radius: 50%
+                border: 1px solid $placeholder
+                transition: 0.35s all
+
+                +color($placeholder, $white)
+
+                +flex(row, center, center)
+
+                &::before
+                    font-size: 13px
+                    font-weight: 600
+                    counter-increment: step
+                    content: counter(step)
+
+            .progress-step-active
+                border: 1px solid $lightblue
+                transition: 0.35s all
+
+                +color($white, $lightblue)
+
+        .form-step
+            display: none
+            transition: 1s all
+            animation: progress-step 0.5s
+
+            & > .title
+                text-align: center
+                margin: 30px auto 10px auto
+
+                +font("Urbanist", 30px, 700)
+
+            & > .subtitle
+                margin: 0 auto 30px auto
+                color: $lightblack
+                text-align: center
+
+                +font("Urbanist", 15px, 400)
+
+            #niveles, #areas
+                display: flex
+                gap: 10px
+                margin: 20px auto 40px auto
+                justify-content: center
+
+                label
+                    > div
+                        width: fit-content
+                        padding: 10px 20px
+                        border-radius: 11px
+                        user-select: none
+                        cursor: pointer
+                        border: 1px solid $inputBorder
+                        transition: 0.2s all
+
+                        +color($black, $white)
+
+                    input[type="checkbox"]
+                        display: none
+
+                        &:checked ~ div
+                            border: 1px solid $lightblue
+                            transition: 0.2s all
+
+                            +color($white, $lightblue)
+
+            #niveles
+                flex-direction: column
+                width: 100%
+
+                label
+                    > div
+                        width: calc(100% - 40px)
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        padding: 12px 20px
+
+                        span
+                            margin-right: 18px
+                            font-size: 18px
+
+            #areas
+                flex-wrap: wrap
+
+        .form-step-active
+            +flex(column, normal, normal)
+
+            transition: 1s all
+
+            #final-response-screen
+                margin-top: 30px
+
+                +flex
+
+                p
+                    text-align: center
+                    font-weight: 600
+
+                    &.error
+                        color: #D72828
+
+            .input-group
+                +flex(column, normal, normal)
+                +font("Urbanist", 16px, 500)
+
+                .error
+                    color: #D72828
+
+                    +flex(row, center, normal)
+
+                label
+                    margin: 20px 0 10px 0
+
+                input
+                    border-radius: 11px
+                    height: 50px
+                    border: 1px solid $inputBorder
+                    transition: 0.3s all
+                    padding-left: 20px
+                    color: $black
+                    outline: none
+
+                    +font("Urbanist", 15px, 400)
+
+                    &::placeholder
+                        color: $placeholder
+
+                    &:focus
+                        transition: 0.3s all
+                        border: 1px solid $lightblue
+
+                input[type="password"]
+                    // font-size: 18px
+                    font-family: Verdana
+                    letter-spacing: 0.125em
+
+                    &::placeholder
+                        font-family: "Urbanist"
+                        letter-spacing: normal
+
+            .actions
+                display: flex
+                gap: 20px
+
+                .btn, button
+                    background: $lightblue
+                    height: 50px
+                    width: 100%
+                    border-radius: 11px
+                    margin-top: 30px
+
+                    +flex
+                    +removeAnchorDeco($white)
+
+                button
+                    border-radius: 11px
+                    height: 50px
+                    border: 1px solid $inputBorder
+                    transition: 0.3s all
+                    color: $white
+                    cursor: pointer
+                    outline: none
+
+                    +font("Urbanist", 15px, 400)
+
+        .final-screen
+            .subtitle
+                +font("Urbanist", 18px, 600)
+
+                margin-bottom: 10px
+
+            .value
+                +font("Urbanist", 16px, 400)
+
+                margin-top: 0
+                margin-bottom: 20px
+
+.error
+    animation: progress-step 0.5s

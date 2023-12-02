@@ -1,0 +1,134 @@
+/* styles.css */
+
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.form-nav {
+  height: 50px;
+  padding:10px 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  margin-bottom: 0;
+}
+
+
+.container{
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+
+#tabla-info{
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  color: #000;
+  text-align: center;
+}
+
+#tabla-info tr th{
+  background-color: #292a2c;
+  color: #fff;
+  padding: 5px;
+}
+
+
+td{
+  border: 1px solid rgb(131, 131, 131);
+  padding: 5px;
+}
+
+#tabla-info tr:nth-of-type(odd){
+  background-color: #e0e0e0;
+}
+
+.label-search {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+  margin: 0;
+}
+
+
+.filtrar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label-select {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+  margin: 1%;
+  margin-left: 5%;
+}
+
+input[type="search"] {
+  background-color: #3d3d3d;
+  color: lightgray;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  box-sizing: border-box;
+  margin-left: 1%;
+}
+
+select{
+  background-color: #3d3d3d;
+  color: rgb(238, 237, 237);
+  width: max-content;
+  height: max-content;
+  border: none;
+  margin-left: 2%;
+  padding: 2px;
+}
+
+.btn-buscar{
+  background-color: #0f0e0e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 8%;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.editar{
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+
+.form-editar{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+
+
+.editar:hover {
+  transition: all 1s;
+  transform: scale(1.6);
+}
+
+.btn-buscar:hover{
+  transition: all 1s;
+  background-color: #3d3d3d;
+}
+

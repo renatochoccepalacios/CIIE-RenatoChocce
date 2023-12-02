@@ -1,0 +1,1 @@
+<script src="<?= ROOT_URL ?>/app/features/cookies.js"></script>

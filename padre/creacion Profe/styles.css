@@ -1,0 +1,159 @@
+/* styles.css */
+
+body {
+  background-color: #03b6c3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+h1,h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #555;
+}
+
+input,
+select,
+datalist,
+input[type="search"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background-color: #03b6c3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+#foto{
+  border-style: none;
+}
+
+.test{
+  display: flex;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  width: 100%;  
+} 
+
+.btns{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  width: 90%;
+}
+
+#lista-eventos {
+  list-style: none;
+  padding: 0;
+  
+}
+
+#lista-eventos li {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+#lista-eventos p {
+  margin: 0;
+}
+
+#lista-eventos p strong {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.error {
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 400px;
+  margin: 0 auto;
+  color: white;
+}
+
+.borrar-evento,
+.borrar-evento:hover {
+    float: right;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: #33c3f0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sub-title{
+  position: relative;
+  right:35%
+}

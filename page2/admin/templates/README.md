@@ -1,0 +1,1 @@
+archivos reutilizables para la estructura visual

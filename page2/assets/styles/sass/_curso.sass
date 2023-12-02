@@ -1,0 +1,213 @@
+@use 'setup'
+
+main.curso-admin
+    font-family: "Urbanist"
+    display: flex
+    flex-direction: column
+    max-width: 1250px
+    width: 100%
+    margin: 60px auto
+
+    &#curso
+        flex-direction: row
+        gap: 40px
+
+        > .col-1
+            flex: 7
+
+            > .row-2
+                h2
+                    font-size: 35px
+                    margin-bottom: 5px
+
+                .about
+                    margin-top: 30px
+                    display: flex
+                    flex-direction: column
+                    gap: 30px
+
+                    .col
+                        display: flex
+                        flex-direction: column
+
+                        h4
+                            font-size: 24px
+                            margin: 0 0 8px 0
+
+                        span
+                            font-size: 18px
+
+        > .col-2
+            flex: 3
+
+    > .row-1, > .col-1 .row-1
+        margin-bottom: 40px
+        display: flex
+        flex-direction: column
+
+        a
+            text-decoration: none
+            color: black
+            font-size: 18px
+            display: flex
+            flex-direction: row
+            align-items: center
+
+            span
+                font-size: 12px
+                margin-right: 8px
+
+        h1
+            margin-top: 20px
+            margin-bottom: 15px
+            font-size: 45px
+
+        > p
+            margin: 0
+            font-size: 16px
+
+    > .row-2
+        display: flex
+        flex-direction: column
+
+        > form button
+            width: 100%
+            background: #222
+            cursor: pointer
+            font-family: "Urbanist"
+            border: none
+            color: #FFF
+            font-size: 16px
+            padding: 16px 0
+            border-radius: 12px
+
+    h2.warning
+        margin: 0
+        font-size: 25px
+
+    &#calificaciones
+        .row-2
+            form
+                div#list
+                    display: flex
+                    flex-direction: column
+                    gap: 15px
+                    margin-bottom: 30px
+
+                    div.student
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: space-between
+                        padding: 20px 60px
+                        border-radius: 12px
+                        border: 2px solid #222
+
+                        div.col-1
+                            font-size: 18px
+                            font-weight: 700
+
+                        div.col-2
+                            display: flex
+                            flex-direction: row
+                            gap: 40px
+
+                            label
+                                user-select: none
+                                cursor: pointer
+                                font-size: 17px
+                                font-weight: 500
+
+    &#certificates
+        .row-2
+            margin-bottom: 20px
+
+        .row-3
+            display: flex
+            flex-direction: column
+            gap: 15px
+
+            > form
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                gap: 10px
+
+                // padding: 20px 60px
+                // border-radius: 12px
+                // border: 2px solid #222
+
+                div.col-1
+                    padding: 20px 40px
+                    border: 2px solid #222
+                    width: 100%
+                    font-size: 18px
+                    font-weight: 700
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    gap: 60px
+                    border-radius: 12px
+
+                    .info
+                        font-size: 16px
+                        font-weight: 500
+                        display: flex
+                        flex-direction: row
+                        gap: 15px
+
+                div.col-2
+                    display: flex
+                    flex-direction: row
+                    gap: 10px
+
+                    button
+                        font-family: "Urbanist"
+                        padding: 10px 21px
+                        min-width: 150px
+                        border-radius: 12px
+                        background: #222
+                        border: none
+                        cursor: pointer
+                        font-size: 16px
+                        color: #fff
+
+                        &.disabled
+                            cursor: not-allowed
+                            background: #ae0f0f
+
+    &#attendance
+        .row-2
+            form
+                div#list
+                    display: flex
+                    flex-direction: column
+                    gap: 15px
+                    margin-bottom: 30px
+
+                    > label
+                        cursor: pointer
+
+                        div.student
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+                            justify-content: space-between
+                            padding: 20px 60px
+                            border-radius: 12px
+                            border: 2px solid #222
+
+                            div.col-1
+                                font-size: 18px
+                                font-weight: 700
+
+                            div.col-2
+                                display: flex
+                                flex-direction: row
+                                gap: 40px
+
+                                label
+                                    user-select: none
+                                    cursor: pointer
+                                    font-size: 17px
+                                    font-weight: 500

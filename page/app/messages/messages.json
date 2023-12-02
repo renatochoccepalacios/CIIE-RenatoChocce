@@ -1,0 +1,16 @@
+{
+    "messages": {
+        "Cod1": "Sesión iniciada correctamente. ",
+        "Cod2": "Cuenta creada exitosamente.",
+        "Cod3": "Correo verificado correctamente",
+        "Cod10": "Notas cerradas de forma exitosa.",
+        "Cod11": "Nómina exportada.",
+        "Cod12": "Certificado generado correctamente.",
+        "Cod13": "Certificado retirado correctamente.",
+        "Cod14": "Certificados generados correctamente.",
+        "Cod15": "Asistencia registrada exitosamente.",
+        "Cod25": "Inscripción exitosa.",
+        "Cod35": "Contraseña cambiada exitosamente.",
+        "Cod36": "Sesión cerrada."
+    }
+}

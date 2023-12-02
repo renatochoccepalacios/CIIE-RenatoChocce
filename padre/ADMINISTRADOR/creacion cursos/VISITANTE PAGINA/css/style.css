@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,96,179,1) 0%, rgba(9,9,121,1) 0%, rgba(19,56,226,1) 49%, rgba(0,212,255,1) 100%); */
+    padding: 20px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-carousel {
+    position: relative;/* le damos una position relative para que las flechas no se salgan del contenedor */
+    width: 800px;
+    /* height: 500px; */
+    background-color: transparent;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,96,179,1) 0%, rgba(9,9,121,1) 0%, rgba(19,56,226,1) 49%, rgba(0,212,255,1) 100%); */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66); /* hacemos una sombra */
+    border-radius: 15px;
+    overflow: hidden;/* para que oculte todos los elementos que no estan en el contenedor */
+    
+}
+
+.carruseles {
+    width: 400%;
+    height: 100%;
+    display: flex; /* ponemos nuestros contenedores uno al lado del otro */
+}
+
+
+.slider-section {
+    /* calculamos entre el 100% entre nuestras 4 imagenes */
+    width: calc(100 / 4); 
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    background: linear-gradient(#09b5ff, #85d7fd);
+}
+
+.dos-img {
+    /* margin-left: 20px; */
+    padding-top: 10px; 
+}
+
+.sello {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 5px;
+    margin-right: 80px;
+}
+
+.profesor-img {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.profesor-img img {
+    /* width: 800px;
+    height: 100%; */
+    
+    width: 190px;
+    height: 190px;
+    
+    object-fit: cover; /* para que nuestras imagenes no pierdan calidad */
+    /* border-radius: 15px; */
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.profesor-img img:hover{
+
+    transform: scale(1.1);
+
+}
+
+
+.sello img {
+    width: 130px;
+    height: 130px;
+    
+    object-fit: cover; /* para que nuestras imagenes no pierdan calidad */
+    border-radius: 100px;
+}
+
+
+.btn-left, .btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #eeeaea;
+    transform: translate(0,-50%); /* centramos las flechas */
+    transition: .5s ease;
+}
+
+.btn-left:hover, .btn-right:hover {
+    background-color: #09b5ff;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+.text1{
+    padding: 2px;
+    margin: 5px 28px 10px;
+    align-items: center;
+    text-align:left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo-folleto{
+    background-color: #49d7ff;
+    padding: 10px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 27px;
+    color: #ffffff;
+    box-shadow: 0 0px 32px 0 rgb(158 251 255 / 43%);
+    transition: all .3s ease;
+}
+
+.titulo-folleto:hover{
+    background-color: #51cbff;
+}
+
+
+.contenedor-folleto {
+    background:#f2f2f2;
+    display: flex;
+    
+    flex-direction: column;
+    width: 60%;
+
+    /* hacemos una sombra */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); 
+    
+    margin: 20px ;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(#fcffff, #c1d9da);
+    padding: 20px;
+    
+
+}
+
+.contenedor-relative {
+    position: relative;
+    width: 150px;
+    left: 10%;
+    text-align: center;
+
+    bottom:35px;
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all .1s ease;
+}
+
+/* .contenedor-relative:hover {
+    transform: scale(1.1);
+
+    
+
+} */
+
+
+/* .folleto-arriba {
+    margin-top: 12px;
+    padding: 8px;
+}
+
+
+.folleto-arriba p {
+    text-align: center;
+    
+}
+
+.formacion-docente {
+    text-align: center;
+    padding: 10px;
+    margin:10px;
+}
+
+.formacion-docente p{
+    font-size: 22px;
+    align-items: center;
+    text-align: center;
+} */
+
+.nivel {
+    position: absolute;
+    transform: rotateZ(-45deg);
+    left: -30px;
+    background-color: #51cbff;
+    padding: 5px 20px;
+    top: 30px;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.66);
+}
+
+.nivel p {
+    color: rgb(253, 241, 225);
+    text-transform: uppercase;
+}
+.contenedor-lista {
+    
+    background-color: rgb(34, 189, 34);
+}
+
+.contenedor-lista p {
+    padding: 0px;
+    font-size: 10px;
+    
+}
+
+.cronograma {
+    position: absolute;
+    width: 300px;
+    padding: 7px;
+    right: 0;
+    bottom: 15px;
+    border-radius: 0 0 15% 0;
+    background: linear-gradient(30deg, #00b3ffbe 87%, transparent 88%, transparent 88%, transparent 100%);
+    box-shadow: -7px 10px 10px -5px;
+    border-radius: 0 0 4px 0;
+    
+}
+
+
+.pie-folleto {
+    width: 220%;
+    background-color: #09b5ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pie-folleto p {
+    width: 23%;
+    color: #fff;
+    text-align: center;
+}
+
+.pie-folleto img {
+    width: 30%;
+
+}
+
+
+
+.folleto-destinatarios {
+    background-color: #f6efef;
+    border-radius: 20px;
+    margin-inline: 50px;
+    /* position: absolute; */
+    margin-bottom: 20px;
+    margin-top: -3%;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.folleto-destinatarios p {
+    padding: 10px;
+    margin: auto;
+    font-size: 11px;
+    
+}
+/* .error {
+    background: #be0000b7;
+    z-index: 2;
+}
+
+.curso-off {
+    background-color: rgb(237, 0, 0);
+    padding: 20px;
+    border-radius: 70px;
+    text-align: center;
+    display: grid;
+} */
+

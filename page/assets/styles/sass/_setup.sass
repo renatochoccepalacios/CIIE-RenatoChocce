@@ -1,0 +1,38 @@
+// variables
+$lightblue: #4C8B9F
+$white: #FFFFFF
+$black: #000000
+$lightblack: #505050
+$inputBorder: #EFF1F8
+$placeholder: #BECCCE
+
+// mixins
+=font($family, $size, $weight: normal, $style: normal, $lineHeight: normal, $letterSpacing: normal)
+    font-family: $family
+    font-size: $size
+    font-weight: $weight
+    font-style: $style
+    line-height: $lineHeight
+    letter-spacing: $letterSpacing
+
+=flex($direction: column, $align: center, $justify: center)
+    display: flex
+    flex-direction: $direction
+    align-items: $align
+    justify-content: $justify
+
+=color($color, $bg)
+    color: $color
+    background: $bg
+
+=removeLiDeco
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+=removeAnchorDeco($color)
+    text-decoration: none
+    color: $color
+
+=darkenImage($url, $brightness)
+    background-image: linear-gradient(rgba(0, 0, 0, $brightness), rgba(0, 0, 0, $brightness)), url($url)

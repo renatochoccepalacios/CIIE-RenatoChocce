@@ -1,0 +1,1 @@
+archivos publicos accesibles directamente desde el navegador

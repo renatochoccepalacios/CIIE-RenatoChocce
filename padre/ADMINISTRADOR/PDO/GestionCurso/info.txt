@@ -1,0 +1,2 @@
+href="GestionCurso/GestionarCursos.php?=<?php echo $curso->getIdCurso(); ?>"
+

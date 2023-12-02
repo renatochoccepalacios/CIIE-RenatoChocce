@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+body{
+    background-color:  #03b6c3; /*  #e9e9e9; */
+}
+.main{
+    width: 75%;
+    height: 450px;
+    margin: 40px auto ;
+    padding: 40px 0;
+    /* border: solid black 2px; */
+    border-radius: 15px;
+/*  background: linear-gradient(#09b5ff, #85d7fd);*/
+    background-color: #ffffff;
+    box-shadow: 2px 7px 25px 7px rgb(87, 132, 190);
+}
+.div-name-curso{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.name-curso{
+    font-size: 36px;
+    color: rgb(3, 3, 3);
+}
+
+.column{
+    display: flex;
+    justify-content: space-around;
+}
+.btns{
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    width: 170px;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #03b6c3;
+
+}
+
+.btn:hover{
+    background: rgb(0, 4, 255);
+    background: linear-gradient(323deg, rgb(26, 1, 114) 5%, rgba(4, 163, 255, 0.972) 90%);
+    cursor: pointer;
+    border: solid 2px rgb(46, 46, 46);
+}
+
+.btn:active{
+    background: linear-gradient(323deg, rgb(17, 2, 155) 5%, rgb(32, 197, 238) 90%);
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-modificar{
+    width: 210px;
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: #03b6c3;
+/*     background: linear-gradient(323deg, rgb(2, 145, 57) 5%, rgba(1, 175, 146, 0.972) 90%); */
+}
+
+.btn-modificar a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-modificar:hover{
+    background: linear-gradient(323deg, rgba(1, 175, 146, 0.972) 5%, rgb(2, 145, 57) 90%);
+    cursor: pointer;
+}
+
+/* .btn-modificar:active{
+    background-color: #00a13e;x|
+} */
+
+.div-info{
+    background: rgb(228, 227, 227);
+    width: 45%;
+    min-height: 360px;
+    max-height: 360px;
+    padding: 10px;
+    border: solid #636262 1px;
+    border-radius: 5px;
+/*     border-radius: 15px 7px 7px 15px;
+    box-shadow: 0 0 25px #589cb1; */
+    overflow-y: scroll;
+}
+
+.div-info::-webkit-scrollbar{
+    width: 7px;
+}
+
+.div-info::-webkit-scrollbar-thumb{
+    background-color: rgb(139, 139, 139);
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 5px;
+}
+
+.title-info{
+    margin-top: 7px;
+    font-size: 20px;
+    color:#2e2e2e
+}
+
+.p-info{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.back{
+    position: absolute;
+    display: flex;
+    margin: -20px 20px;
+}
+
+.a-back i{
+    font-size: 35px;
+    color: #2e2e2e;
+}

@@ -1,0 +1,75 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para las tarjetas */
+.card-sede,
+.card-curso,
+.card-areas,
+.card-niveles {
+  width: 600px; /* Ancho de las tarjetas */
+  background-color: rgb(63, 94, 119); /* Color de fondo */
+  border: 1px solid #ccc; /* Borde */
+  margin: 10px; /* Espacio entre las tarjetas */
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* Bordes redondeados */
+
+}
+  .card-body{
+
+    color: #ffffff;
+    
+  }
+  
+  /* Estilo para el encabezado de la tarjeta */
+  .card-header {
+    background-color: rgb(48, 77, 100); /* Fondo amarillo */
+    color: #ffffff; /* Color del texto del encabezado más oscuro */
+    padding: 10px; /* Espaciado interno */
+    font-weight: bold;
+    border-top-left-radius: 15px; /* Bordes redondeados para la esquina superior izquierda */
+    border-top-right-radius: 15px; /* Bordes redondeados para la esquina superior derecha */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    text-align: center;
+  }
+  
+  /* Estilo para el título de la tarjeta */
+  .card-title {
+    font-size: 1.25rem; /* Tamaño de fuente del título */
+    margin: 10px; /* Espaciado superior e inferior */
+  }
+  
+  /* Estilo para el texto de la tarjeta */
+  .card-text {
+    margin: 10px; /* Espaciado inferior */
+
+  }
+  .card-links {
+    text-align: center;
+  }
+  
+  /* Estilo para los enlaces de la tarjeta (botones) */
+  .card-link {
+    color: #fff; 
+    background-color: rgb(40, 59, 75); 
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+    display: inline-block; 
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Cambio de color al pasar el mouse sobre los enlaces */
+  .card-link:hover {
+    background-color: rgb(132, 154, 172); /* Cambio de color al pasar el mouse (amarillo más claro) */
+  }
+  

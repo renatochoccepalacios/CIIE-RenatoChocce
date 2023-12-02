@@ -1,0 +1,1 @@
+<!-- para verificar si el etr tiene o no acceso a este curso (nicolas) -->

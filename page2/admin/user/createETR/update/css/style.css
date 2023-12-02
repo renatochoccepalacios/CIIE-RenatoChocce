@@ -1,0 +1,19 @@
+
+body {
+    background-color: #03b6c3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  form{
+    display: flex;
+  }
+
+  button{
+    width: 50%;
+    background-color: black;
+}

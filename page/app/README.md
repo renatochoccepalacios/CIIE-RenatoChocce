@@ -1,0 +1,1 @@
+archivos relacionados a la funcionalidad del sitio

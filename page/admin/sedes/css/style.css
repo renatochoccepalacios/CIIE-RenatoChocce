@@ -1,0 +1,328 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* RENATO */
+body {
+    scroll-behavior: smooth;
+    background-color: #ebe6e6;
+    font-family: 'urbanist';
+
+}
+.buscador-form {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    flex-wrap: wrap;
+    padding: 0 0 20px;
+    gap: 20px;
+    flex-direction: column;
+
+}
+.buscador-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    letter-spacing: 4px;
+}
+.buscador-title h2{
+    background-color: #15daf3;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.buscador-title h2:hover{
+    background-color: rgb(24, 188, 238);
+    
+}
+.buscador-title h3{
+    color: #fff;    
+}
+
+
+
+.buscador-cursos {
+    
+    /* flex-direction: column; */
+    /* padding: 20px; */
+    max-width: 100%;
+} 
+
+.buscar-input {
+    cursor: pointer;
+    background-color: #292a2c;
+    color: #fff;
+}
+.buscar-input:hover {
+    background-color: #202020;
+}
+.buscador-input {
+    display: flex;
+    gap: 10px;
+    margin-left: 55px;
+    /* justify-content: center; */
+    /* padding: 23px; */
+    flex-wrap: wrap;
+}
+.buscador-input input {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    /* width: 100%; */
+}
+
+.buscador-input input:focus {
+    outline: none;
+
+}
+
+.busqueda-resultados{
+    display: flex;
+    /* text-align: left; */
+    overflow-x: auto; /* Barra de desplazamiento horizontal en pantallas pequeñas */
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 10%);
+    justify-content: center;
+    /* margin-top: 30px; */
+}
+.tabla-resultados {
+    width: 100%; /* Ajusta el ancho de la tabla en pantallas pequeñas */
+    overflow-x: auto; /* Barra de desplazamiento horizontal en pantallas pequeñas */
+    border-collapse: collapse; /* Para evitar espacios entre celdas */
+    background: #ffffff;
+    color: #000;
+}
+.tabla-resultados tr th{
+    background-color: #292a2c;
+    color: #fff;
+    
+}
+
+/* .tabla-resultados tr th {
+    border-top: 2px solid rgb(165, 165, 165);
+    border-left:2px solid rgb(165, 165, 165);
+
+} */
+
+.tabla-resultados tr, td, th {
+    /* border-top: 2px solid rgb(165, 165, 165);
+
+    border-left:2px solid rgb(165, 165, 165);
+    border-bottom: 2px solid rgb(165, 165, 165); */ /* Cambia el color y el estilo del borde inferior */
+    border-bottom: 1px solid rgb(33, 33, 33);
+}
+
+
+.cambiar-estado{
+    border: none;
+    border-radius: 15px;
+}
+.fa-toggle-on{
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(31, 218, 87);
+    color: #f2f2f2;
+    cursor: pointer;
+
+}
+
+.fa-toggle-off{
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(218, 31, 31);
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+
+.editar-buttom i {
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: #000;
+    
+    color: #f2f2f2;
+}
+
+.editar-buttom i:hover {
+    background-color: #252525;
+    
+
+    color: #f2f2f2;
+}
+
+
+
+.tabla-resultados th,
+.tabla-resultados td {
+    padding: 5px; /* Reduce el espacio entre las celdas */
+    text-align: center;
+
+}
+.tabla-resultados td {
+    border: 1px solid #909090;
+
+}
+.tabla-resultados tr:nth-of-type(odd){
+    background-color: #e0e0e0;
+}
+
+
+
+@media (max-width: 768px) {
+    .tabla-resultados td, .tabla-resultados th{
+        display: none; 
+        padding: 30px;
+        border-bottom: 1px solid rgb(33, 33, 33);/* Cambia el color y el estilo del borde inferior */
+    }
+
+    .tabla-resultados th {
+        display: none;
+    }
+    .buscador-cursos {
+        flex-direction: column; /* Cambia a dirección de columna en pantallas pequeñas */
+    }
+    
+    .tabla-resultados {
+        width: 100%; /* Ajusta el ancho de la tabla en pantallas pequeñas */
+        overflow-x: auto; /* Barra de desplazamiento horizontal en pantallas pequeñas */
+    }
+
+    .buscador-form {
+        display: flex;
+    }
+
+    /* .borrar-buttom, .editar-buttom {
+        width: 100%;
+    } */
+
+    .tabla-resultados tr td input{
+        padding: 8px;
+    }
+
+    .buscador-input input {
+        padding: 10px 20px;
+    }
+    .busqueda-resultados {
+        margin-top: 0;
+    }
+}
+
+.busqueda-resultados-mobile {
+    display: none;
+    width: 100%;
+}
+
+.busqueda-resultados-mobile .fila .columna{
+    display: flex;
+}
+
+.busqueda-resultados-mobile .fila .columna .titulo, .busqueda-resultados-mobile .fila .columna .contenido{
+    border: 1px solid #909090;
+    border-bottom: none;
+    padding: 10px;
+}
+
+.busqueda-resultados-mobile .fila .columna .titulo {
+    width: 40%;
+    background-color: #15daf3;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.busqueda-resultados-mobile .fila .columna .contenido {
+    width: 60%;
+    text-align: center;
+}
+
+.busqueda-resultados-mobile .fila:nth-of-type(even) .columna .contenido{/* pares */
+    background-color: #e6e6e6;
+}
+
+.busqueda-resultados-mobile .fila .columna:last-of-type .contenido, 
+.busqueda-resultados-mobile .fila .columna:last-of-type .titulo{
+    border-bottom: 1px solid #000000;
+}
+
+.borrar-boton i{
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(218, 31, 31);
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.borrar-boton i:hover {
+    background-color: rgb(161, 29, 29);
+    color: #f2f2f2;
+}
+.editar-boton i {
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: #15daf3;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.editar-boton i:hover {
+    background-color: rgb(24, 188, 238);
+    
+
+    color: #f2f2f2;
+}
+@media (max-width: 768px) {
+    .busqueda-resultados-mobile {
+        display: block ;
+    }
+
+
+}
+
+.filtrar-busqueda {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filtrar-item {
+    cursor: pointer;
+    color: #fff;
+    background: none;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+
+.filtrar-item option {
+    color: #000000;
+    border-radius: 20px;
+}
+
+.filtrar-item:focus{
+    outline: none;
+    
+}
+
+/* display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; */

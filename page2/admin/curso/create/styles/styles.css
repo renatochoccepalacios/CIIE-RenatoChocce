@@ -1,0 +1,143 @@
+/* styles.css */
+
+body {
+  background-color: #03b6c3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px; 
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+h1,h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input,
+select,
+datalist,
+input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background-color: #03b6c3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+#left-column {
+  flex: 1;
+  padding-right: 20px;
+}
+
+#right-column {
+
+  flex: 1;
+  padding-left: 20px;
+  max-width: 390px;
+} 
+
+#lista-eventos {
+  list-style: none;
+  padding: 0;
+  
+}
+
+#lista-eventos li {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+#lista-eventos p {
+  margin: 0;
+}
+
+#lista-eventos p strong {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.error {
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 400px;
+  margin: 0 auto;
+  color: white;
+}
+
+.borrar-evento,
+.borrar-evento:hover {
+    float: right;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: #33c3f0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.back{
+  position: absolute;
+  display: flex;
+  margin: -0px 0px;
+}
+
+.a-back i{
+  font-size: 35px;
+  color: #2e2e2e;
+}

@@ -1,0 +1,11 @@
+{
+    "messages": {
+        "Cod1": "Sesión iniciada correctamente. ",
+        "Cod10": "Notas cerradas de forma exitosa.",
+        "Cod11": "Nómina exportada.",
+        "Cod12": "Certificado generado correctamente.",
+        "Cod13": "Certificado retirado correctamente.",
+        "Cod14": "Certificados generados correctamente.",
+        "Cod15": "Asistencia registrada exitosamente."
+    }
+}
